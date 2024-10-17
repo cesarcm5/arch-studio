@@ -27,8 +27,7 @@ Users should be able to:
 - Receive an error message when the contact form is submitted if:
   - The `Name`, `Email` or `Message` fields are empty, showing "Can't be empty"
   - The `Email` is not formatted correctly, showing "Please use a valid email address"
-- **Bonus**: View actual locations on the contact page map using real addresses instead of fictional ones.![preview](https://github.com/user-attachments/assets/59077388-41eb-4f93-9b95-0a4939d0aa6b)
-
+- **Bonus**: View actual locations on the contact page map using real addresses instead of fictional ones.
 
 ### Screenshot
 
