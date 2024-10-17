@@ -28,7 +28,6 @@ Users should be able to:
 ### Screenshot
 
 ![Project Screenshot](https://github.com/user-attachments/assets/cd00c964-bb39-49b9-9861-402f0f9ebbe0)
-t.jpg)
 
 
 ## My process
