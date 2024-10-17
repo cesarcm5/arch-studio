@@ -1,10 +1,11 @@
-import Image from "next/image";
 import Header from "../app/header/page.js"
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <h1>Me cagas Ian</h1>
-    </div>
+    <main className="my-8 mx-12 px-12">
+      <Header/>
+      <div>
+        Hola
+      </div>
+    </main>
   )
 }

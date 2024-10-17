@@ -1,8 +1,21 @@
-import logo from "../../../starter-code/assets/logo.svg";
+import Image from "next/image";
 export default function Header() {
     return (
-        <header>
-            <img src={logo} alt="logo" />
+        <header className="flex">
+            <div className="me-5">
+                <img src="/assets/logo.svg"/>
+            </div>
+            <div className="space-x-12">
+                <button>
+                    Portfolio
+                </button>
+                <button>
+                    About Us 
+                </button>
+                <button>
+                    Contact
+                </button>
+            </div>
         </header>
     )
 }
