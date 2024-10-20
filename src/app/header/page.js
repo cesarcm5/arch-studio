@@ -1,11 +1,11 @@
-import Image from "next/image";
+
 export default function Header() {
     return (
         <header className="flex">
             <div className="me-5">
                 <img src="/assets/logo.svg"/>
             </div>
-            <div className="space-x-12">
+            <div className="md:space-x-12 md:ms-12 md:px-10 text-gray-500 font-bold pt-2">
                 <button>
                     Portfolio
                 </button>
