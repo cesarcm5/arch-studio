@@ -6,7 +6,7 @@ const projects = [
   {
     image: "/assets/home/desktop/image-hero-paramour.jpg",
     title: "Project Paramour",
-    subtitle: `Project made for an art museum near Southwest London.\n Project Paramour is a statement of bold, modern architecture.`,
+    subtitle: "Project made for an art museum near Southwest London.ff Project Paramour is a statement of bold, modern architecture.",
     alt: "Project Paramour",
   },
   {
@@ -28,6 +28,7 @@ const projects = [
     alt: "Trinity Bank Tower",
   },
 ];
+
 
 export default function Home() {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -66,6 +67,22 @@ export default function Home() {
               {`0${index + 1}`}
             </button>
           ))}
+        </div>
+      </div>
+      <div className="p-12 ms-6 mt-12">
+        <div className="absolute">
+          <p id="welcome" className=" font-bold text-9xl text-gray-300 fw-semibold">Welcome</p>
+        </div>
+        <div className="flex ms-12 mt-12 pt-12">
+          <div>
+            <p className="text-7xl font-bold mt-12">Welcome to <br></br> Arch Studio</p>
+            <p className="font-semibold text-gray-400 ms-2 mt-10">We have a unique network and skillset to help bring your <br></br> projects to life. Our small team of highly skilled individuals <br></br> combined with our large network put us in a strong <br></br> position to deliver exceptional results.</p>
+            <p className="font-semibold text-gray-400 ms-2 mt-5">Over the past 10 years, we have worked on all kinds of <br></br> projects. From stations to high-rise buildings, we create <br></br> spaces that inspire and delight.</p>
+            <p className="font-semibold text-gray-400 ms-2 mt-5">We work closely with our clients so that we understand the <br></br> intricacies of each project. This allows us to work in <br></br> harmony the surrounding area to create truly stunning <br></br> projects that will stand the test of time.</p>
+          </div>
+          <div className="mx-auto">
+            <img className="" src="/assets/home/desktop/image-welcome.jpg" alt="welcome image"/>
+          </div>
         </div>
       </div>
     </main>
