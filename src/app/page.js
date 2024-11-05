@@ -51,6 +51,10 @@ export default function Home() {
             <p className="mt-5 ps-12 mx-12 break-keep">
               {projects[selectedTab].subtitle}
             </p>
+            <button className=" w-2/6 bg-black">
+              <p>See Our Portfolio</p>
+              <img src="/assets/icons/icon-arrow.svg" alt="right arrow" />
+            </button>
           </div>
         </div>
 
