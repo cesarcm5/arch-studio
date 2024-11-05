@@ -1,30 +1,31 @@
 'use client';
+import Link from "next/link"
 import Header from "../app/header/page.js";
 import { useState } from "react";
 
 const projects = [
   {
     image: "/assets/home/desktop/image-hero-paramour.jpg",
-    title: "Project Paramour",
-    subtitle: "Project made for an art museum near Southwest London.ff Project Paramour is a statement of bold, modern architecture.",
+    title: <span>Project <br/> Paramour</span>,
+    subtitle: <span>Project made for an art museum near Southwest London. <br/>ff Project Paramour is a statement of bold, modern <br/> architecture.</span>,
     alt: "Project Paramour",
   },
   {
     image: "/assets/home/desktop/image-hero-seraph.jpg",
-    title: "Project Seraph",
-    subtitle: "The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.",
+    title: <span>Project <br/> Seraph</span>,
+    subtitle: <span> The Seraph Station project challenged us to design a unique station <br/> that would transport people through time. The result is a <br/> fresh and futuristic model inspired by space stations. </span>,
     alt: "Project Seraph",
   },
   {
     image: "/assets/home/desktop/image-hero-federal.jpg",
-    title: "Federal II Tower",
-    subtitle: "A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches.",
+    title: <span>Federal II <br/> Tower</span>,
+    subtitle: <spna>A sequel theme project for a tower originally built in the 1800s.<br/> We achieved this with a striking look of brutal minimalism <br/> with modern touches.</spna>,
     alt: "Federal II Tower",
   },
   {
     image: "/assets/home/desktop/image-hero-trinity.jpg",
-    title: "Trinity Bank Tower",
-    subtitle: "Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.",
+    title: <span>Trinity Bank <br/> Tower</span>,
+    subtitle: <span>Trinity Bank challenged us to make a concept for a 84 story building located in the middle <br/> of a city with a high earthquake frequency. For this project we used curves <br/> to blend design and stability to meet our objectives.</span>,
     alt: "Trinity Bank Tower",
   },
 ];
@@ -41,7 +42,7 @@ export default function Home() {
           <img
             src={projects[selectedTab].image}
             alt={projects[selectedTab].alt}
-            className="w-full h-3/4 object-cover"
+            className="w-full h-2/6 object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-40"></div>
           <div className="absolute inset-0 flex flex-col justify-center text-white ps-10 mx-12">
@@ -51,10 +52,14 @@ export default function Home() {
             <p className="mt-5 ps-12 mx-12 break-keep">
               {projects[selectedTab].subtitle}
             </p>
-            <button className=" w-2/6 bg-black">
-              <p>See Our Portfolio</p>
-              <img src="/assets/icons/icon-arrow.svg" alt="right arrow" />
-            </button>
+            <div className="w-1/6 bg-black p-2 mt-12 ms-12 px-2">        
+              <button className="">
+                <Link className="flex" href="/portfolio">
+                  <p className="font-semibold">See Our Portfolio</p>
+                  <img className="mx-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -87,6 +92,12 @@ export default function Home() {
           <div className="mx-auto">
             <img className="" src="/assets/home/desktop/image-welcome.jpg" alt="welcome image"/>
           </div>
+        </div>
+      </div>
+      <div className="relative">
+        <div className="relative">
+          <img className="object-cover" src="/assets/home/desktop/image-small-team.jpg"/>
+          <div className="absolute inset-0 bg-black opacity-30"></div>
         </div>
       </div>
     </main>

@@ -79,18 +79,19 @@ export default function Portfolio() {
     return (
         <main className="my-8 mx-12 px-12">
             <Header/>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap pt-12 ms-12 ps-1">
 
 
                 {works.map((item, index) => (
-                    <div>
+                    <div className="ms-6 my-6">
                         <div className="relative">
-                            <img key={index} src={item.image} alt={item.alt}/>
-                        </div>
-                        <div>
-                            <p>{item.title}</p>
-                            <p>{item.date}</p>
-                        </div>
+                            <img className="object-cover" key={index} src={item.image} alt={item.alt}/>
+                            <div className="absolute inset-0 bg-black opacity-40"></div>
+                            <div id="project" className="absolute inset-0 flex flex-col justify-center items-left text-white">
+                                <p className="text-2xl font-bold ">{item.title}</p>
+                                <p className="text-sm align-bottom ">{item.date}</p>
+                            </div>
+                        </div>       
                     </div>
                 ))}
 
