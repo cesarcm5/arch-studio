@@ -77,34 +77,34 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="p-12 ms-6 mt-12">
+      <div id="view2" className="p-12 ms-6 mt-12">
         <div className="absolute">
           <p id="welcome" className=" font-bold text-9xl text-gray-300 fw-semibold">Welcome</p>
         </div>
-        <div className="flex ms-12 mt-12 pt-12">
+        <div id="introduction" className="flex ms-12 mt-12 pt-12">
           <div>
             <p className="text-7xl font-bold mt-12">Welcome to <br></br> Arch Studio</p>
             <p className="font-semibold text-gray-400 ms-2 mt-10">We have a unique network and skillset to help bring your <br></br> projects to life. Our small team of highly skilled individuals <br></br> combined with our large network put us in a strong <br></br> position to deliver exceptional results.</p>
             <p className="font-semibold text-gray-400 ms-2 mt-5">Over the past 10 years, we have worked on all kinds of <br></br> projects. From stations to high-rise buildings, we create <br></br> spaces that inspire and delight.</p>
             <p className="font-semibold text-gray-400 ms-2 mt-5">We work closely with our clients so that we understand the <br></br> intricacies of each project. This allows us to work in <br></br> harmony the surrounding area to create truly stunning <br></br> projects that will stand the test of time.</p>
           </div>
-          <div className="mx-auto">
-            <img className="" src="/assets/home/desktop/image-welcome.jpg" alt="welcome image" />
+          <div className="">
+            <img id="imagewelcome" className="" src="/assets/home/desktop/image-welcome.jpg" alt="welcome image" />
           </div>
         </div>
       </div>
-      <div className="relative">
-        <img className="object-cover" src="assets/home/desktop/image-small-team.jpg" />
-        <div className="absolute inset-0 bg-black opacity-30 w-4/5"></div>
-        <div id="smallteam" className="absolute inset-0 flex flex-col justify-center text-white">
-          <p className="text-6xl font-bold ">Small team,<br />big ideas</p>
-          <div className="w-1/6 bg-black p-2 mt-12 ms-12 px-2">
-            <button className="">
-              <Link className="flex" href="/aboutus">
-                <p className="font-semibold">About Us</p>
-                <img className="mx-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
-              </Link>
-            </button>
+      <div id="view3" className="relative">
+        <img className="object-cover w-full" src="assets/home/desktop/image-small-team.jpg" alt="Small team" />
+        <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div id="smallteam" className="absolute inset-0 flex flex-col justify-center items-center text-white ">
+          <p className="text-6xl font-bold">Small team,<br />big ideas</p>
+          <div className="bg-black mt-12 me-12">
+            <Link href="/aboutus">
+              <button className="flex text-left bg-black text-white py-2 px-4 rounded">
+                <span className="font-semibold">About Us</span>
+                <img className="ml-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

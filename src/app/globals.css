@@ -36,6 +36,19 @@ body {
   margin-left: 25px;
 }
 #smallteam {
-  margin-left: 200px;
-  margin-bottom: 50px;
+  margin-right: 400px;
+}
+#about {
+  margin-right: 200px;
+  font-size: 220px;
+}
+#view2 {
+  margin-bottom: 100px;
+}
+#introduction {
+  padding-top: 80px;
+}
+#imagewelcome {
+  margin-left: 250px;
+  margin-top: 20px;
 }
