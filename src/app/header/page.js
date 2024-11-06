@@ -14,7 +14,9 @@ export default function Header() {
                     </Link>
                 </button>
                 <button>
-                    About Us 
+                    <Link href="/aboutus">
+                        About Us 
+                    </Link>
                 </button>
                 <button>        
                     Contact

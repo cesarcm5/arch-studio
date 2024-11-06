@@ -6,26 +6,26 @@ import { useState } from "react";
 const projects = [
   {
     image: "/assets/home/desktop/image-hero-paramour.jpg",
-    title: <span>Project <br/> Paramour</span>,
-    subtitle: <span>Project made for an art museum near Southwest London. <br/>ff Project Paramour is a statement of bold, modern <br/> architecture.</span>,
+    title: <span>Project <br /> Paramour</span>,
+    subtitle: <span>Project made for an art museum near Southwest London. <br />ff Project Paramour is a statement of bold, modern <br /> architecture.</span>,
     alt: "Project Paramour",
   },
   {
     image: "/assets/home/desktop/image-hero-seraph.jpg",
-    title: <span>Project <br/> Seraph</span>,
-    subtitle: <span> The Seraph Station project challenged us to design a unique station <br/> that would transport people through time. The result is a <br/> fresh and futuristic model inspired by space stations. </span>,
+    title: <span>Project <br /> Seraph</span>,
+    subtitle: <span> The Seraph Station project challenged us to design a unique station <br /> that would transport people through time. The result is a <br /> fresh and futuristic model inspired by space stations. </span>,
     alt: "Project Seraph",
   },
   {
     image: "/assets/home/desktop/image-hero-federal.jpg",
-    title: <span>Federal II <br/> Tower</span>,
-    subtitle: <spna>A sequel theme project for a tower originally built in the 1800s.<br/> We achieved this with a striking look of brutal minimalism <br/> with modern touches.</spna>,
+    title: <span>Federal II <br /> Tower</span>,
+    subtitle: <spna>A sequel theme project for a tower originally built in the 1800s.<br /> We achieved this with a striking look of brutal minimalism <br /> with modern touches.</spna>,
     alt: "Federal II Tower",
   },
   {
     image: "/assets/home/desktop/image-hero-trinity.jpg",
-    title: <span>Trinity Bank <br/> Tower</span>,
-    subtitle: <span>Trinity Bank challenged us to make a concept for a 84 story building located in the middle <br/> of a city with a high earthquake frequency. For this project we used curves <br/> to blend design and stability to meet our objectives.</span>,
+    title: <span>Trinity Bank <br /> Tower</span>,
+    subtitle: <span>Trinity Bank challenged us to make a concept for a 84 story building located in the middle <br /> of a city with a high earthquake frequency. For this project we used curves <br /> to blend design and stability to meet our objectives.</span>,
     alt: "Trinity Bank Tower",
   },
 ];
@@ -52,7 +52,7 @@ export default function Home() {
             <p className="mt-5 ps-12 mx-12 break-keep">
               {projects[selectedTab].subtitle}
             </p>
-            <div className="w-1/6 bg-black p-2 mt-12 ms-12 px-2">        
+            <div className="w-1/6 bg-black p-2 mt-12 ms-12 px-2">
               <button className="">
                 <Link className="flex" href="/portfolio">
                   <p className="font-semibold">See Our Portfolio</p>
@@ -68,9 +68,8 @@ export default function Home() {
           {projects.map((_, index) => (
             <button
               key={index}
-              className={`px-4 py-2 ${
-                index === selectedTab ? "bg-gray-100" : "bg-white"
-              }`}
+              className={`px-4 py-2 ${index === selectedTab ? "bg-gray-100" : "bg-white"
+                }`}
               onClick={() => setSelectedTab(index)}
             >
               {`0${index + 1}`}
@@ -90,14 +89,23 @@ export default function Home() {
             <p className="font-semibold text-gray-400 ms-2 mt-5">We work closely with our clients so that we understand the <br></br> intricacies of each project. This allows us to work in <br></br> harmony the surrounding area to create truly stunning <br></br> projects that will stand the test of time.</p>
           </div>
           <div className="mx-auto">
-            <img className="" src="/assets/home/desktop/image-welcome.jpg" alt="welcome image"/>
+            <img className="" src="/assets/home/desktop/image-welcome.jpg" alt="welcome image" />
           </div>
         </div>
       </div>
       <div className="relative">
-        <div className="relative">
-          <img className="object-cover" src="/assets/home/desktop/image-small-team.jpg"/>
-          <div className="absolute inset-0 bg-black opacity-30"></div>
+        <img className="object-cover" src="assets/home/desktop/image-small-team.jpg" />
+        <div className="absolute inset-0 bg-black opacity-30 w-4/5"></div>
+        <div id="smallteam" className="absolute inset-0 flex flex-col justify-center text-white">
+          <p className="text-6xl font-bold ">Small team,<br />big ideas</p>
+          <div className="w-1/6 bg-black p-2 mt-12 ms-12 px-2">
+            <button className="">
+              <Link className="flex" href="/aboutus">
+                <p className="font-semibold">About Us</p>
+                <img className="mx-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
+              </Link>
+            </button>
+          </div>
         </div>
       </div>
     </main>
