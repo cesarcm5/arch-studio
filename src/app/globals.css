@@ -52,3 +52,7 @@ body {
   margin-left: 250px;
   margin-top: 20px;
 }
+#team {
+  margin-left: auto;
+  padding: 100px; 
+}
