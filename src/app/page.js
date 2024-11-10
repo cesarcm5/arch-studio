@@ -35,7 +35,15 @@ export default function Home() {
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
-    <main className="my-8 mx-12 px-12">
+    <main id="main" className="">
+      <div id="fringe" className="fixed left-0 top-0 h-1/6 w-16 flex items-center justify-center border-r border-gray-300">
+        <div className="flex flex-col">
+          <div className=" h-full border-l border-gray-300"></div>
+          <div className=" vertical-text text-gray-400 uppercase tracking-widest mt-2">
+              <p>Home</p>
+          </div>
+        </div>
+      </div>
       <Header />
       <div className="relative pt-12">
         <div className="relative">
@@ -95,7 +103,7 @@ export default function Home() {
       </div>
       <div id="view3" className="relative">
         <img className="object-cover w-full" src="assets/home/desktop/image-small-team.jpg" alt="Small team" />
-        <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div className="absolute inset-0 bg-black opacity-40"></div>
         <div id="smallteam" className="absolute inset-0 flex flex-col justify-center items-center text-white ">
           <p className="text-6xl font-bold">Small team,<br />big ideas</p>
           <div className="bg-black mt-12 me-12">
