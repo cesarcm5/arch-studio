@@ -18,8 +18,10 @@ export default function Header() {
                         About Us 
                     </Link>
                 </button>
-                <button>        
-                    Contact
+                <button> 
+                    <Link href="/contact">       
+                        Contact
+                    </Link>
                 </button>
             </div>
         </header>

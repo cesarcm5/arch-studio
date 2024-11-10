@@ -73,6 +73,26 @@ export default function Aboutus() {
                     <img className="" src="assets/about/desktop/image-heritage.jpg" />
                 </div>
             </div>
+            <div id="leaders" className="flex p-6">
+                <div className="mt-12">
+                    <p className="text-6xl font-bold p-5">The leaders</p>
+                </div>
+                <div id="crew" className="grid grid-cols-2 p-5">
+                    {crew.map((member, index) => {
+                        return (
+                            <div className="p-2">
+                                <div className="">
+                                    <img src={member.avatar} />
+                                </div>
+                                <div className="text-left">
+                                    <p className="font-bold text-xl">{member.name}</p>
+                                    <p className="text-gray-500">{member.rol}</p>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
         </main>
     )
 }

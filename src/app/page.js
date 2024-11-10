@@ -109,8 +109,8 @@ export default function Home() {
           <div className="bg-black mt-12 me-12">
             <Link href="/aboutus">
               <button className="flex text-left bg-black text-white py-2 px-4 rounded">
-                <span className="font-semibold">About Us</span>
-                <img className="ml-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
+                  <span className="font-semibold">About Us</span>
+                  <img className="ml-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" /> 
               </button>
             </Link>
           </div>
