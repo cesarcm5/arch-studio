@@ -50,7 +50,7 @@ export default function Aboutus() {
                     </div>
                 </div>
             </div>
-            <div className="flex mt-12">
+            <div className="flex mt-12 mb-12">
                 <div id="heritage" className="text-left w-2/4">
                     <p className="font-bold text-5xl">
                         Our Heritage
@@ -78,19 +78,17 @@ export default function Aboutus() {
                     <p className="text-6xl font-bold p-5">The leaders</p>
                 </div>
                 <div id="crew" className="grid grid-cols-2 p-5">
-                    {crew.map((member, index) => {
-                        return (
-                            <div className="p-2">
-                                <div className="">
-                                    <img src={member.avatar} />
-                                </div>
-                                <div className="text-left">
-                                    <p className="font-bold text-xl">{member.name}</p>
-                                    <p className="text-gray-500">{member.rol}</p>
-                                </div>
+                    {crew.map((member, index) => (
+                        <div className="p-2" key={index}>
+                            <div className="">
+                                <img src={member.avatar} alt={`${member.name} avatar`} />
                             </div>
-                        )
-                    })}
+                            <div className="text-left">
+                                <p className="font-bold text-xl">{member.name}</p>
+                                <p className="text-gray-500">{member.rol}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </main>

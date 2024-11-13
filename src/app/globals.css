@@ -80,3 +80,10 @@ main {
 #contact {
   margin-left: 250px
 }
+#form {
+  margin-left: 250px;
+  padding-bottom: 150px;
+}
+#formview {
+  margin-top: 150px;
+}

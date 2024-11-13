@@ -29,7 +29,7 @@ export default function Contact() {
             </div>
             <div className="p-8 flex mt-12 mb-12">
                 <div className='p-5'>
-                    <p className='font-bold text-6xl'>Contact <br/> Details</p>
+                    <p className='font-bold text-6xl'>Contact <br /> Details</p>
                 </div>
                 <div id="contact" className="flex gap-x-12 mt-6 ml-12">
                     {/* Main Office */}
@@ -65,8 +65,61 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            <div className='ms-8 mt-12 pt-12'>
-                <img src="assets/contact/desktop/image-map.png"/>
+            <div className='ms-8 mt-12 pt-12 mb-12'>
+                <img src="assets/contact/desktop/image-map.png" />
+            </div>
+            <div id="formview" className="p-8 mt-12">
+                <p className=" w-1/5 text-5xl font-bold">Connect <br/>with us</p>
+                <form id="form" className="space-y-6 ms-12">
+                    {/* Name Input */}
+                    <div>
+                        <label htmlFor="name" className="sr-only">
+                            Name
+                        </label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Name"
+                            className="w-full border-b border-black bg-transparent focus:outline-none focus:border-black py-2 placeholder-gray-400"
+                        />
+                    </div>
+
+                    {/* Email Input */}
+                    <div>
+                        <label htmlFor="email" className="sr-only">
+                            Email
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Email"
+                            className="w-full border-b border-black bg-transparent focus:outline-none focus:border-black py-2 placeholder-gray-400"
+                        />
+                    </div>
+
+                    {/* Message Input */}
+                    <div>
+                        <label htmlFor="message" className="sr-only">
+                            Message
+                        </label>
+                        <textarea
+                            id="message"
+                            placeholder="Message"
+                            rows="4"
+                            className="w-full border-b border-black bg-transparent focus:outline-none focus:border-black py-2 placeholder-gray-400"
+                        ></textarea>
+                    </div>
+
+                    {/* Submit Button */}
+                    <div className="flex justify-end">
+                        <button
+                            type="submit"
+                            className="bg-black text-white w-12 h-12 flex items-center justify-center rounded-full"
+                        >
+                            <img src="assets/icons/icon-arrow.svg" />
+                        </button>
+                    </div>
+                </form>
             </div>
         </main>
     )
