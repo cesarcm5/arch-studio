@@ -30,6 +30,26 @@ const projects = [
   },
 ];
 
+const item = [
+  {
+    image: "assets/portfolio/desktop/image-del-sol.jpg",
+    title: "Project Del Sol",
+    date: "View All Projects",
+    alt: "Project Del Sol"
+  },
+  {
+    image: "../assets/portfolio/desktop/image-228b.jpg",
+    title: "Seraph Station",
+    date: "View All Projects",
+    alt: "Seraph Station"
+  },
+  {
+    image: "../assets/portfolio/desktop/image-prototype.jpg",
+    title: "Le Prototype",
+    date: "View All Projects",
+    alt: "Le Prototype"
+  }
+];
 
 export default function Home() {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -40,7 +60,7 @@ export default function Home() {
         <div className="flex flex-col">
           <div className=" h-full border-l border-gray-300"></div>
           <div className=" vertical-text text-gray-400 uppercase tracking-widest mt-2">
-              <p>Home</p>
+            <p>Home</p>
           </div>
         </div>
       </div>
@@ -109,11 +129,54 @@ export default function Home() {
           <div className="bg-black mt-12 me-12">
             <Link href="/aboutus">
               <button className="flex text-left bg-black text-white py-2 px-4 rounded">
-                  <span className="font-semibold">About Us</span>
-                  <img className="ml-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" /> 
+                <span className="font-semibold">About Us</span>
+                <img className="ml-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
               </button>
             </Link>
           </div>
+        </div>
+      </div>
+      <div className=" mt-12 p-12">
+        <div className="flex">
+          <div>
+            <p className="text-5xl font-bold">Featured</p>
+          </div>
+          <div className="ms-auto">
+            <Link href="/portfolio">
+              <button className="flex text-left bg-black text-white py-2 px-4 rounded">
+                <span className="font-semibold">See All</span>
+                <img className="ml-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="flex">
+          {item.map((item, index) => (
+            <div className="relative ms-6 my-6" key={index}>
+              <div className="relative">
+                <img
+                  className="object-cover w-full"
+                  src={item.image}
+                  alt={item.alt}
+                />
+                <div className="absolute inset-0 bg-black opacity-20"></div>
+
+                {/* Number Overlay */}
+                <div className="absolute top-4 left-4 text-[10rem] font-bold text-white opacity-50">
+                  {index + 1}
+                </div>
+
+                {/* Project Info */}
+                <div
+                  id="project"
+                  className="absolute inset-0 flex flex-col justify-end p-4 text-white"
+                >
+                  <p className="text-2xl font-bold">{item.title}</p>
+                  <p className="text-sm">{item.date}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </main>
