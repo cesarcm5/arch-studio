@@ -1,4 +1,5 @@
 import Header from '../header/page.js'
+import Footer from "../footer/page.js"
 export default function Contact() {
     return (
         <main>
@@ -121,6 +122,7 @@ export default function Contact() {
                     </div>
                 </form>
             </div>
+            <Footer/>
         </main>
     )
 }

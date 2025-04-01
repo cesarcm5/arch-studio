@@ -1,6 +1,7 @@
 'use client';
 import Link from "next/link"
 import Header from "../app/header/page.js";
+import Footer from "../app/footer/page.js"
 import { useState } from "react";
 
 const projects = [
@@ -73,18 +74,18 @@ export default function Home() {
             className="w-full h-2/6 object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-40"></div>
-          <div className="absolute inset-0 flex flex-col justify-center text-white ps-10 mx-12">
-            <p className="text-8xl font-black mt-10 text-left ps-12 mx-12">
+          <div className="absolute inset-0 flex flex-col justify-center text-white pb-10 ps-10 mx-12">
+            <p className="text-8xl font-bold mt-10 text-left ps-12 mx-12">
               {projects[selectedTab].title}
             </p>
-            <p className="mt-5 ps-12 mx-12 break-keep">
+            <p className="mt-5 ps-12 mx-12 break-keep font-bold">
               {projects[selectedTab].subtitle}
             </p>
-            <div className="w-1/6 bg-black p-2 mt-12 ms-12 px-2">
+            <div id="seeourportfolio" className=" p-2 mt-12 ms-20">
               <button className="">
                 <Link className="flex" href="/portfolio">
-                  <p className="font-semibold">See Our Portfolio</p>
-                  <img className="mx-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
+                  <span className="font-semibold pt-3 pl-7 text-sm">See Our Portfolio</span>
+                  <img className="pt-3 pl-3" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
                 </Link>
               </button>
             </div>
@@ -92,15 +93,15 @@ export default function Home() {
         </div>
 
         {/* Tabs Section */}
-        <div className="flex">
+        <div id="tab" className="absolute flex bottom-0 left-0">
           {projects.map((_, index) => (
             <button
               key={index}
-              className={`px-4 py-2 ${index === selectedTab ? "bg-gray-100" : "bg-white"
+              className={`px-4 py-2  ${index === selectedTab ? "bg-slate-900" : "bg-white"
                 }`}
               onClick={() => setSelectedTab(index)}
             >
-              {`0${index + 1}`}
+            <p className={`${index === selectedTab ? "text-white": "text-black"}`}>{index}</p>
             </button>
           ))}
         </div>
@@ -121,16 +122,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="view3" className="relative">
+      <div id="view3" className="relative sm-3/4">
         <img className="object-cover w-full" src="assets/home/desktop/image-small-team.jpg" alt="Small team" />
         <div className="absolute inset-0 bg-black opacity-40"></div>
-        <div id="smallteam" className="absolute inset-0 flex flex-col justify-center items-center text-white ">
+        <div id="smallteam" className="absolute inset-0 flex flex-col justify-center text-white ps-20 ml-20 pb-8 ">
           <p className="text-6xl font-bold">Small team,<br />big ideas</p>
-          <div className="bg-black mt-12 me-12">
+          <div id="aboutus" className=" static mt-12">
             <Link href="/aboutus">
-              <button className="flex text-left bg-black text-white py-2 px-4 rounded">
+              <button className="flex text-left text-white py-6 pl-9 rounded">
                 <span className="font-semibold">About Us</span>
-                <img className="ml-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
+                <img className="ps-4" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
               </button>
             </Link>
           </div>
@@ -141,9 +142,9 @@ export default function Home() {
           <div>
             <p className="text-5xl font-bold">Featured</p>
           </div>
-          <div className="ms-auto">
+          <div id="seeall" className="ms-auto pt-3">
             <Link href="/portfolio">
-              <button className="flex text-left bg-black text-white py-2 px-4 rounded">
+              <button className="flex text-left text-white py-2 px-4 rounded">
                 <span className="font-semibold">See All</span>
                 <img className="ml-2" src="/assets/icons/icon-arrow.svg" alt="right arrow" />
               </button>
@@ -179,6 +180,7 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <Footer/>
     </main>
   );
 }

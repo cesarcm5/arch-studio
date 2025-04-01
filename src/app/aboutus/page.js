@@ -1,5 +1,7 @@
 'use client'
 import Header from "../header/page"
+import Footer from "../footer/page.js"
+
 const crew = [
     {
         name: "Jake Richards",
@@ -91,6 +93,7 @@ export default function Aboutus() {
                     ))}
                 </div>
             </div>
+            <Footer/>
         </main>
     )
 }

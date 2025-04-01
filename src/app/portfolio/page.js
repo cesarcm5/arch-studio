@@ -1,5 +1,6 @@
 'use client'
 import Header from "../header/page.js"
+import Footer from "../footer/page.js"
 const works = [
     {
         image: "../assets/portfolio/desktop/image-228b.jpg",
@@ -105,6 +106,7 @@ export default function Portfolio() {
 
 
             </div>
+            <Footer/>
         </main>
     )
 }

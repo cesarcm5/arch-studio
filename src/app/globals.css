@@ -28,15 +28,31 @@ body {
   }
 }
 
+#aboutus {
+  background-color: #221C20;
+  width: 180px;
+  height: 70px
+}
+#seeourportfolio {
+  width:220px;
+  height:60px;
+  background-color: #221C20;
+}
+#seeall {
+  background-color: #221C20;
+  height:60px;
+  width:120px
+}
 #welcome {
   font-size: 220px;
 }
+#tab {
+  height: 60px;
+}
+
 #project {
   padding-top: 400px;
   margin-left: 25px;
-}
-#smallteam {
-  margin-right: 400px;
 }
 #about {
   margin-right: 200px;
