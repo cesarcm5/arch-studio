@@ -3,72 +3,84 @@ import Header from "../header/page.js"
 import Footer from "../footer/page.js"
 const works = [
     {
+        id: 0,
         image: "../assets/portfolio/desktop/image-228b.jpg",
         title: "Seraph Station",
         date: "September 2019",
         alt: "Seraph Station",
     },
     {
+        id: 1,
         image: "../assets/portfolio/desktop/image-del-sol.jpg",
         title: "Project Del Sol",
         date: "January 2016",
         alt: "Project Del Sol",
     },
     {
+        id: 2,
         image: "../assets/portfolio/desktop/image-edelweiss.jpg",
         title: "Grand Edelweiss Hotel",
         date: "December 2013",
         alt: "Grand Edelweiss Hotel",
     },
     {
+        id: 3,
         image: "../assets/portfolio/desktop/image-eebox.jpg",
         title: "Eebox Building",
         date: "August 2017",
         alt: "Eebox Building",
     },
     {
+        id: 4,
         image: "../assets/portfolio/desktop/image-federal.jpg",
         title: "Federal II Tower",
         date: "March 2017",
         alt: "Federal II Tower",
     },
     {
+        id: 5,
         image: "../assets/portfolio/desktop/image-hypers.jpg",
         title: "Hypers",
         date: "January 2012",
         alt: "Hypers",
     },
     {
+        id: 6,
         image: "../assets/portfolio/desktop/image-netcry.jpg",
         title: "Netcry Tower",
         date: "August 2012",
         alt: "Netcry Tower",
     },
     {
+        id: 7,
         image: "../assets/portfolio/desktop/image-paramour.jpg",
         title: "Project Paramour",
         date: "February 2008",
         alt: "Project Paramour",
     },
     {
+        id: 8,
         image: "../assets/portfolio/desktop/image-prototype.jpg",
         title: "Le Prototype",
         date: "October 2015",
         alt: "Le Prototype",
     },
     {
+        id: 9,
         image: "../assets/portfolio/desktop/image-seraph.jpg",
         title: "Seraph Station",
         date: "September 2019",
         alt: "Seraph Station",
     },
     {
+        id: 10,
         image: "../assets/portfolio/desktop/image-sxiv.jpg",
         title: "SXIV Tower",
         date: "March 2011",
         alt: "SXIV Tower",
     },
     {
+        id: 11,
         image: "../assets/portfolio/desktop/image-trinity.jpg",
         title: "Trinity Bank Tower",
         date: "September 2010",
@@ -92,9 +104,9 @@ export default function Portfolio() {
 
 
                 {works.map((item, index) => (
-                    <div className="ms-6 my-6">
+                    <div key={item.id} className="ms-6 my-6">
                         <div className="relative">
-                            <img className="object-cover" key={index} src={item.image} alt={item.alt} />
+                            <img className="object-cover" src={item.image} alt={item.alt} />
                             <div className="absolute inset-0 bg-black opacity-40"></div>
                             <div id="project" className="absolute inset-0 flex flex-col justify-center items-left text-white">
                                 <p className="text-2xl font-bold ">{item.title}</p>
