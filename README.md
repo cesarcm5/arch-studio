@@ -1,6 +1,6 @@
 # Frontend Mentor - Arch Studio Multi-Page Website Solution
 
-This is my solution to the [Arch Studio multi-page website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/arch-studio-multipage-website-wNIbOFYR6). This project helped me improve my coding skills through building a realistic multi-page website.
+This is my solution to the [Arch Studio multi-page website challenge on Frontend Mentor](https://arch-studio-kappa.vercel.app/). This project helped me improve my coding skills through building a realistic multi-page website.
 
 ## Table of contents
 
