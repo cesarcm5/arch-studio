@@ -57,7 +57,7 @@ export default function Home() {
 
   return (
     <main id="main" className="">
-      <div id="fringe" className="fixed left-0 top-0 h-1/6 w-16 flex items-center justify-center border-r border-gray-300">
+      <div id="fringe" className="hidden md:block fixed left-0 top-0 h-1/6 w-16 flex items-center justify-center border-r border-gray-300">
         <div className="flex flex-col">
           <div className=" h-full border-l border-gray-300"></div>
           <div className=" vertical-text text-gray-400 uppercase tracking-widest mt-2">
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
       </div>
       <Header />
-      <div className="relative pt-12">
+      <div className="relative mt-8 md:pt-5">
         <div className="relative">
           <img
             src={projects[selectedTab].image}

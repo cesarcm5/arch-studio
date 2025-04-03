@@ -27,7 +27,7 @@ const crew = [
 export default function Aboutus() {
     return (
         <main className="">
-            <div id="fringe" className="fixed left-0 top-0 h-1/6 w-16 flex items-center justify-center border-r border-gray-300">
+            <div id="fringe" className=" hidden sm:block fixed left-0 top-0 h-1/6 w-16 flex items-center justify-center border-r border-gray-300">
                 <div className="flex flex-col">
                     <div className=" h-full border-l border-gray-300"></div>
                     <div className=" vertical-text text-gray-400 uppercase tracking-widest mt-2">

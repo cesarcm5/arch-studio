@@ -82,10 +82,12 @@ body {
   margin-top: 250px;
   margin-left: 60px;
 }
-main {
-  padding-left: 120px;
-  padding-right: 100px;
-  margin-top: 50px;
+@media (min-width: 1025px){
+  main {
+    padding-left: 120px;
+    padding-right: 100px;
+    margin-top: 50px;
+  }
 }
 #crew {
   margin-left: 160px;
