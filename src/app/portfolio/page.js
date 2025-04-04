@@ -100,50 +100,50 @@ const works = [
     }
 ];
 export default function Portfolio() {
-
     return (
-        <main className="">
+        <main className="flex flex-col justify-center min-h-screen">
+            {/* Fringe */}
             <div id="fringe" className="hidden sm:block fixed left-0 top-0 h-1/6 w-16 flex items-center justify-center border-r border-gray-300">
                 <div className="flex flex-col">
-                    <div className=" h-full border-l border-gray-300"></div>
-                    <div className=" vertical-text text-gray-400 uppercase tracking-widest mt-2">
+                    <div className="h-full border-l border-gray-300"></div>
+                    <div className="vertical-text text-gray-400 uppercase tracking-widest mt-2">
                         <p>PORTFOLIO</p>
                     </div>
                 </div>
             </div>
-            <Header />
-            <div className=" flex flex-wrap pt-12 ms-3 lg:ms-12 ps-1">
 
-
-                {works.map((item, index) => (
-                    <div key={item.id} className="ms-6 my-6 hidden md:block">
-                        <div className="relative hidden md:block">
-                            <img className="object-cover" src={item.image} alt={item.alt} />
-                            <div className="absolute inset-0 bg-black opacity-40"></div>
-                            <div id="project" className="absolute inset-0 flex flex-col justify-center items-left text-white">
-                                <p className="text-2xl font-bold ">{item.title}</p>
-                                <p className="text-sm align-bottom ">{item.date}</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-
-                {works.map((item, index) => (
-                    <div key={item.id} className="ms-6 my-6 block md:hidden ">
-                        <div className="relative">
-                            <img className="object-cover" src={item.mobileImage} alt={item.alt} />
-                            <div className="absolute inset-0 bg-black opacity-40"></div>
-                            <div id="project" className="absolute inset-0 flex flex-col justify-center items-left text-white">
-                                <p className="text-2xl font-bold ">{item.title}</p>
-                                <p className="text-sm align-bottom ">{item.date}</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-
-
+            {/* Header */}
+            <div className=" md:me-auto">
+                <Header/>
             </div>
-            <Footer />
+
+            {/* Portfolio Items */}
+            <div className="flex flex-wrap justify-center items-center gap-6 pt-12 px-4">
+                {works.map((item) => (
+                    <div key={item.id} className="relative">
+                        <img
+                            className="object-cover w-full md:hidden"
+                            src={item.mobileImage}
+                            alt={item.alt}
+                        />
+                        <img
+                            className="object-cover w-full hidden md:block"
+                            src={item.image}
+                            alt={item.alt}
+                        />
+                        <div className="absolute inset-0 bg-black opacity-40"></div>
+                        <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
+                            <p className="text-2xl font-bold">{item.title}</p>
+                            <p className="text-sm">{item.date}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Footer */}
+            <div className="md:ms-auto">
+                <Footer />
+            </div>
         </main>
-    )
+    );
 }
