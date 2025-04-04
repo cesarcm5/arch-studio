@@ -28,6 +28,8 @@ body {
   }
 }
 
+
+
 #aboutus {
   background-color: #221C20;
   width: 180px;
@@ -87,6 +89,12 @@ body {
     padding-left: 120px;
     padding-right: 100px;
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 650px){
+  #first-image {
+    height: 450px;
   }
 }
 #crew {

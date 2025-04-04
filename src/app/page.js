@@ -71,14 +71,15 @@ export default function Home() {
           <img
             src={projects[selectedTab].image}
             alt={projects[selectedTab].alt}
+            id="first-image"
             className="w-full h-2/6 object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-40"></div>
-          <div className="absolute inset-0 flex flex-col justify-center text-white pb-10 ps-10 mx-12">
-            <p className="text-8xl font-bold mt-10 text-left ps-12 mx-12">
+          <div className="absolute inset-0 flex flex-col justify-start md:justify-center text-white lg:pb-10 lg:ps-10 lg:mx-12">
+            <p className="text-4xl lg:text-8xl font-extrabold mt-10 text-left ps-12 mx-12">
               {projects[selectedTab].title}
             </p>
-            <p className="mt-5 ps-12 mx-12 break-keep font-bold">
+            <p className="font-semibold  text-sm md:text-base mt-5 ps-12 mx-12 break-keep md:font-bold">
               {projects[selectedTab].subtitle}
             </p>
             <div id="seeourportfolio" className=" p-2 mt-12 ms-20">
@@ -106,18 +107,18 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div id="view2" className="p-12 ms-6 mt-12">
-        <div className="absolute">
+      <div id="view2" className="md:p-12 md:ms-6 mt-4 md:mt-12">
+        <div className="hidden md:block absolute">
           <p id="welcome" className=" font-bold text-9xl text-gray-300 fw-semibold">Welcome</p>
         </div>
-        <div id="introduction" className="flex ms-12 mt-12 pt-12">
+        <div id="introduction" className="flex md:ms-12 md:mt-12 md:pt-12 sm:ps-6 md:ps-1">
           <div>
-            <p className="text-7xl font-bold mt-12">Welcome to <br></br> Arch Studio</p>
-            <p className="font-semibold text-gray-400 ms-2 mt-10">We have a unique network and skillset to help bring your <br></br> projects to life. Our small team of highly skilled individuals <br></br> combined with our large network put us in a strong <br></br> position to deliver exceptional results.</p>
-            <p className="font-semibold text-gray-400 ms-2 mt-5">Over the past 10 years, we have worked on all kinds of <br></br> projects. From stations to high-rise buildings, we create <br></br> spaces that inspire and delight.</p>
-            <p className="font-semibold text-gray-400 ms-2 mt-5">We work closely with our clients so that we understand the <br></br> intricacies of each project. This allows us to work in <br></br> harmony the surrounding area to create truly stunning <br></br> projects that will stand the test of time.</p>
+            <p id="welcome-to-arch" className=" text-4xl md:text-7xl font-bold mt-12">Welcome to <br></br> Arch Studio</p>
+            <p className="font-semibold text-balance text-gray-500 md:ms-2 mt-10">We have a unique network and skillset to help bring your projects to life. Our small team of highly skilled individuals combined with our large network put us in a strong position to deliver exceptional results.</p>
+            <p className="font-semibold text-balance text-gray-500 md:ms-2 mt-5">Over the past 10 years, we have worked on all kinds of projects. From stations to high-rise buildings, we create spaces that inspire and delight.</p>
+            <p className="font-semibold text-balance text-gray-500 md:ms-2 mt-5">We work closely with our clients so that we understand the intricacies of each project. This allows us to work in harmony the surrounding area to create truly stunning projects that will stand the test of time.</p>
           </div>
-          <div className="">
+          <div className="hidden md:block">
             <img id="imagewelcome" className="" src="/assets/home/desktop/image-welcome.jpg" alt="welcome image" />
           </div>
         </div>
