@@ -48,9 +48,7 @@ body {
 #welcome {
   font-size: 220px;
 }
-#tab {
-  height: 60px;
-}
+
 
 #project {
   padding-top: 400px;
@@ -90,11 +88,17 @@ body {
     padding-right: 100px;
     margin-top: 50px;
   }
+  #tab {
+    height: 60px;
+  }
 }
 
 @media (max-width: 650px){
   #first-image {
     height: 450px;
+  }
+  #small-team-image {
+    height: 500px;
   }
 }
 #crew {
