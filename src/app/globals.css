@@ -88,6 +88,7 @@ body {
   #about {
     margin-right: 200px;
     font-size: 220px;
+    margin-top: 100px;
   }
   #contact {
     margin-left: 250px
@@ -98,7 +99,8 @@ body {
   }
   #team {
     margin-left: auto;
-    padding: 100px; 
+    padding: 100px;
+    margin-top: 100px;
   }
   #formview {
   margin-top: 150px;

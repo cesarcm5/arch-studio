@@ -12,7 +12,7 @@ export default function Contact() {
                 </div>
             </div>
             <Header />
-            <div className="lg:p-12">
+            <div className="lg:p-12 mt-8">
 
                 {/* Desktop Image */}
                 <div className="hidden lg:block absolute">
@@ -20,27 +20,27 @@ export default function Contact() {
                 </div>
 
                 {/* Mobile Image */}
-                <div className='block md:hidden w-full'>
+                <div className='block md:hidden w-5/6 ms-8'>
                     <img src='assets/contact/mobile/image-hero.jpg'/>
                 </div>
 
-                <div className="">
-                    <div id="about" className="lg:text-end lg:relative font-bold text-gray-300">
-                        <p id="about1">Contact</p>
+                <div className="mt-10 md:mt-1 ps-5 md:ps-1">
+                    <div id="about" className="lg:text-end md:relative font-bold text-4xl lg:text-gray-300">
+                        <p id="about1" claasName="">Contact</p>
                     </div>
-                    <div id="team" className="lg:w-3/5 lg:relative lg:bg-white lg:flex lg:align-center">
+                    <div id="team" className="lg:w-3/5 lg:relative lg:bg-white lg:flex lg:align-center mt-8 md:mt-1">
                         <div className="">
-                            <p className="font-bold text-2xl lg:text-5xl mb-4 lg:p-12">Tell us about<br />your project</p>
-                            <p className="font-semibold p-10 text-gray-500">We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!</p>
+                            <p className="font-bold text-2xl lg:text-5xl mb-4 lg:mb-1 lg:p-12">Tell us about<br />your project</p>
+                            <p className="font-semibold text-sm px-10 text-gray-500">We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="lg:p-8 lg:flex mt-12 mb-12">
                 <div className='p-5'>
-                    <p className='font-bold lg:text-6xl'>Contact <br /> Details</p>
+                    <p className='font-bold text-4xl lg:text-6xl'>Contact <br /> Details</p>
                 </div>
-                <div id="contact" className="lg:flex lg:gap-x-12 mt-6 lg:ml-12">
+                <div id="contact" className="lg:flex lg:gap-x-12 mt-6 ml-8 lg:ml-12">
                     {/* Main Office */}
                     <div>
                         <h3 className="font-bold">Main Office</h3>
@@ -77,12 +77,12 @@ export default function Contact() {
             <div className='hidden lg:block lg:ms-8 mt-12 lg:pt-12 mb-12'>
                 <img src="assets/contact/desktop/image-map.png" />
             </div>
-            <div className='block md:hidden w-full'>
+            <div className='block md:hidden w-5/6 ms-8'>
                 <img src='assets/contact/mobile/image-map.png'/>
             </div>
             <div id="formview" className="p-8 mt-12">
-                <p className=" w-1/5 text-5xl font-bold">Connect <br/>with us</p>
-                <form id="form" className="space-y-6 lg:ms-12">
+                <p className=" w-3/5 md:w-1/5 text-5xl font-bold">Connect <br/>with us</p>
+                <form id="form" className="space-y-6 mt-5 lg:ms-12">
                     {/* Name Input */}
                     <div>
                         <label htmlFor="name" className="sr-only">
@@ -92,7 +92,7 @@ export default function Contact() {
                             type="text"
                             id="name"
                             placeholder="Name"
-                            className="lg:w-full border-b border-black bg-transparent focus:outline-none focus:border-black py-2 placeholder-gray-400"
+                            className="w-full border-b border-black bg-transparent focus:outline-none focus:border-black py-2 placeholder-gray-400"
                         />
                     </div>
 
@@ -105,7 +105,7 @@ export default function Contact() {
                             type="email"
                             id="email"
                             placeholder="Email"
-                            className="lg:w-full border-b border-black bg-transparent focus:outline-none focus:border-black py-2 placeholder-gray-400"
+                            className="w-full border-b border-black bg-transparent focus:outline-none focus:border-black py-2 placeholder-gray-400"
                         />
                     </div>
 
@@ -118,7 +118,7 @@ export default function Contact() {
                             id="message"
                             placeholder="Message"
                             rows="4"
-                            className="lg:w-full border-b border-black bg-transparent focus:outline-none focus:border-black py-2 placeholder-gray-400"
+                            className="w-full border-b border-black bg-transparent focus:outline-none focus:border-black py-2 placeholder-gray-400"
                         ></textarea>
                     </div>
 
