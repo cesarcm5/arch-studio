@@ -36,7 +36,7 @@ export default function Aboutus() {
                 </div>
             </div>
             <Header />
-            <div className="p-12">
+            <div className="p-12 hidden lg:block">
                 <div className="absolute">
                     <img src="assets/about/desktop/image-hero.jpg" />
                 </div>
@@ -52,8 +52,20 @@ export default function Aboutus() {
                     </div>
                 </div>
             </div>
-            <div className="flex mt-12 mb-12">
-                <div id="heritage" className="text-left w-2/4">
+            <div className="block md:hidden pt-8">
+                <img src="assets/about/mobile/image-hero.jpg" className="w-full" />
+            </div>
+            <div className="block md:hidden ps-6 my-10">
+                <div className="">
+                    <p className="font-bold text-5xl mb-4">Your team of <br /> professionals</p>
+                    <p className="font-semibold text-gray-500">Our small team of world-class professionals will work with you every step of the way.Strong relationships are at the core of everything we <br /> do. This extends to the relationship our projects have with their surroundings.</p>
+                </div>
+            </div>
+            <div className="lg:flex lg:flex-row-reverse mt-12 mb-12">
+                <div className="">
+                    <img className="" src="assets/about/desktop/image-heritage.jpg" />
+                </div>
+                <div id="heritage" className="text-left ms-9 mb-12 w-3/4 md:w-2/4">
                     <p className="font-bold text-5xl">
                         Our Heritage
                     </p>
@@ -71,21 +83,18 @@ export default function Aboutus() {
                         Our small team of world-class professionals provides input on every project.
                     </p>
                 </div>
-                <div className="">
-                    <img className="" src="assets/about/desktop/image-heritage.jpg" />
-                </div>
             </div>
-            <div id="leaders" className="flex p-6">
+            <div id="leaders" className="md:flex p-6">
                 <div className="mt-12">
                     <p className="text-6xl font-bold p-5">The leaders</p>
                 </div>
-                <div id="crew" className="grid grid-cols-2 p-5">
+                <div id="crew" className="grid grid-cols-1 md:grid-cols-2 lg:p-5 gap-y-5">
                     {crew.map((member, index) => (
                         <div className="p-2" key={index}>
                             <div className="">
                                 <img src={member.avatar} alt={`${member.name} avatar`} />
                             </div>
-                            <div className="text-left">
+                            <div className="md:text-left">
                                 <p className="font-bold text-xl">{member.name}</p>
                                 <p className="text-gray-500">{member.rol}</p>
                             </div>
@@ -93,7 +102,7 @@ export default function Aboutus() {
                     ))}
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </main>
     )
 }

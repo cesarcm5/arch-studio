@@ -49,15 +49,6 @@ body {
   font-size: 220px;
 }
 
-
-#project {
-  padding-top: 400px;
-  margin-left: 25px;
-}
-#about {
-  margin-right: 200px;
-  font-size: 220px;
-}
 #view2 {
   margin-bottom: 100px;
 }
@@ -67,10 +58,6 @@ body {
 #imagewelcome {
   margin-left: 250px;
   margin-top: 20px;
-}
-#team {
-  margin-left: auto;
-  padding: 100px; 
 }
 #heritage {
   margin-right: 100px;
@@ -91,6 +78,31 @@ body {
   #tab {
     height: 60px;
   }
+  #project {
+    padding-top: 400px;
+    margin-left: 25px;
+  }
+  #crew {
+    margin-left: 160px;
+  }
+  #about {
+    margin-right: 200px;
+    font-size: 220px;
+  }
+  #contact {
+    margin-left: 250px
+  }
+  #form {
+    margin-left: 250px;
+    padding-bottom: 150px;
+  }
+  #team {
+    margin-left: auto;
+    padding: 100px; 
+  }
+  #formview {
+  margin-top: 150px;
+  }
 }
 
 @media (max-width: 650px){
@@ -100,20 +112,13 @@ body {
   #small-team-image {
     height: 500px;
   }
+  #project {
+    margin-top: 150px;
+    margin-left: 30px;
+  }
 }
-#crew {
-  margin-left: 160px;
-}
+
 #leaders {
   margin-top: 80px;
 }
-#contact {
-  margin-left: 250px
-}
-#form {
-  margin-left: 250px;
-  padding-bottom: 150px;
-}
-#formview {
-  margin-top: 150px;
-}
+
