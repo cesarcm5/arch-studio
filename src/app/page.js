@@ -60,7 +60,7 @@ export default function Home() {
 
   return (
     <main id="main" className="">
-      <div id="fringe" className="hidden md:block fixed left-0 top-0 h-1/6 w-16 flex items-center justify-center border-r border-gray-300">
+      <div id="fringe" className="hidden lg:block fixed left-0 top-0 h-1/6 w-16 flex items-center justify-center border-r border-gray-300">
         <div className="flex flex-col">
           <div className=" h-full border-l border-gray-300"></div>
           <div className=" vertical-text text-gray-400 uppercase tracking-widest mt-2">
@@ -111,17 +111,20 @@ export default function Home() {
         </div>
       </div>
       <div id="view2" className="md:p-12 md:ms-6 mt-4 md:mt-12">
-        <div className="hidden md:block absolute">
+        <div className="hidden lg:block absolute">
           <p id="welcome" className=" font-bold text-9xl text-gray-300 fw-semibold">Welcome</p>
         </div>
-        <div id="introduction" className="flex md:ms-12 md:mt-12 md:pt-12 sm:ps-6 md:ps-1">
+        <div className="hidden md:block-lg:hidden">
+          <p className="text-9xl text-gray-300 font-semibold">Welcome</p>
+        </div>
+        <div id="introduction" className="flex lg:ms-12 lg:mt-12 lg:pt-12 sm:ps-6 md:ps-1">
           <div className="ps-5 md:ps-1">
             <p id="welcome-to-arch" className=" text-4xl md:text-7xl font-bold mt-12">Welcome to <br></br> Arch Studio</p>
             <p id="text-1" className="font-semibold text-balance md:text-pretty text-gray-500 md:text-gray-400 md:ms-2 mt-10">We have a unique network and skillset to help bring your <br className="hidden md:block"></br> projects to life. Our small team of highly skilled individuals <br className="hidden md:block"></br> combined with our large network put us in a strong <br className="hidden md:block"></br> position to deliver exceptional results.</p>
             <p className="font-semibold text-balance text-gray-500 md:text-gray-400 md:ms-2 mt-5">Over the past 10 years, we have worked on all kinds of <br className="hidden md:block"></br> projects. From stations to high-rise buildings, we create <br className="hidden md:block"></br> spaces that inspire and delight.</p>
             <p className="font-semibold text-balance text-gray-500 md:text-gray-400 md:ms-2 mt-5">We work closely with our clients so that we understand the <br className="hidden md:block"></br> intricacies of each project. This allows us to work in <br className="hidden md:block"></br> harmony the surrounding area to create truly stunning <br className="hidden md:block"></br> projects that will stand the test of time.</p>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <img id="imagewelcome" className="" src="/assets/home/desktop/image-welcome.jpg" alt="welcome image" />
           </div>
         </div>

@@ -69,6 +69,12 @@ body {
   margin-top: 250px;
   margin-left: 60px;
 }
+@media (min-width: 700px){
+  main {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
 @media (min-width: 1025px){
   main {
     padding-left: 120px;
